@@ -1,5 +1,5 @@
 {
-  "name": "mijn-huisrobot",
+  "name": "rakkers-hengelsport",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -16,5 +16,14 @@
   "devDependencies": {
     "eslint": "^8",
     "eslint-config-next": "14.2.5"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "index.js",
+  "keywords": [
+    "webshop",
+    "hengelsport",
+    "sportfishing"
+  ],
+  "author": "Remco Jonk",
+  "license": "ISC"
 }

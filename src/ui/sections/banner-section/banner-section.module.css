@@ -1,0 +1,21 @@
+.banner {
+  background-image: url('/assets/images/home-page/vissen-in-zweden.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70svh;
+}
+
+.bannerContent {
+  align-content: center;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+
+}
+.bannerContent h3{
+  text-shadow: var(--color-primary) 2px 1px 1px;
+  color: var(--color-neutral);
+  font-size: var(--font-size-hero-medium);
+  font-weight: var(--font-weight-medium);
+}

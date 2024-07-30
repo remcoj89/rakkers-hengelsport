@@ -1,0 +1,22 @@
+.btn {
+  cursor: pointer;
+  border: none;
+  border-radius: var(--border-radius-btn);
+  padding-block: 1rem;
+  padding-inline: 1.4rem;
+  text-transform: uppercase;
+  min-width: 30ch;
+  color: var(--color-neutral);
+  font-weight: var(--font-weight-medium);
+}
+
+.btn:hover{
+  opacity: 0.8;
+}
+
+.btnPrimary {
+  background-color: red;
+}
+.btnSecondary {
+  background-color: green;
+}
