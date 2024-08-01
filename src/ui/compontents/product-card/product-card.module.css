@@ -1,52 +1,75 @@
+/* Product card */
 .productCard {
-  border-radius: var(--border-radius);
-  overflow: hidden;
-  max-width: 50rem;
-  background-color: gray;
+  flex: 0 0 auto;
+  width: 30rem;
+}
+
+.productImage {
   position: relative;
-  color: var(--color-neutral);
+  height: 35rem;
 }
-
-.productCard img {
-  width: 100%;
-  height: 40rem;
-  object-fit: cover;
-}
-
-.cardText {
-  border-radius: var(--border-radius);
-  background-color: rgba(92, 92, 92, 0.685);
-  padding:1rem;
-  display: grid;
-  gap: 2rem;
-}
-
-.cardContent {
-  max-width: 30ch;
-}
-
-.cardContent h3{
-  font-size: 2.4rem;
-  font-weight: var(--font-weight-medium);
-  line-height: 2.4;
-}
-.cardContent p {
-  font-size: 1.6rem;
-  font-weight: var(--font-weight-light);
-  line-height: 1.4;
-}
-
-.productPrice {
+.productImage > button {
   position: absolute;
-  top: 0;
-  right: 7rem;
-  background-color: green;
-  padding: 1rem 2rem;
-  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  bottom: 10%;
+  inset-inline: 10%;
+  opacity: 0;
+}
+
+.productCard:hover > .productImage > button {
+  opacity: 1;
+}
+
+.discountTag {
+  position: absolute;
+  background-color: rgb(var(--color-neutral));
+  padding: 1rem;
+  right: 0%;
+}
+
+.productThumb{
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.productInfo{
+  padding: var(--size-1);
+  background-color: rgb(228, 228, 228);
+  display: grid;
+  gap: var(--size-1);
+}
+
+.productName {
+  font-size: var(--font-size-body-large);
+  font-weight: var(--font-weight-medium);
+  text-transform: capitalize;
+}
+
+.productShortDescription {
+  opacity: 0.5;
+  line-height: 20px;
+  text-transform: capitalize;
+  overflow: hidden;
+}
+
+.productInfo:hover > .productShortDescription {
+  opacity: 1;
+}
+
+.price {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-body-large) ;
+}
+
+.actualPrice{
+  font-size: (--font-size-body-large);
+  text-decoration: line-through;
 }
 
 
-.buttons {
+.priceWrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
+/* End Product card */

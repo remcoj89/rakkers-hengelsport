@@ -5,7 +5,23 @@ const nextConfig = {
     NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN: process.env.NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN
   },
   images: {
-    domains: ['cdn.shopify.com', 'plus.unsplash.com', 'photos.fife.usercontent.google.com/']
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn.shopify.com',
+        port: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'plus.unsplash.com',
+        port: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'placehold.co',
+        port: '',
+      }
+     ]
   }
 };
 

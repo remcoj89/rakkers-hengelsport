@@ -1,5 +1,4 @@
 .heroSection {
-  background-color: rgb(32, 43, 73);
   background-image: url('https://images.unsplash.com/photo-1566014727723-20aa739a7b11?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-size: cover;
   background-repeat: no-repeat;
@@ -8,7 +7,7 @@
 
 .heroWrapper {
   align-content: center;
-  color: var(--color-on-primary);
+  color: rgb(var(--color-on-primary));
   height: 100%;
   margin-inline: auto;
   max-width: var(--wrapper-max-width);

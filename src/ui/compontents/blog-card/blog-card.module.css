@@ -1,0 +1,20 @@
+
+.mediaElement {
+  background: rgb(var(--color-primary-hover));
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-2);
+  color: rgb(var(--color-neutral));
+  display: grid;
+  gap: var(--size-2);
+  grid-template-rows: min-content;
+  overflow: hidden;
+  max-width: 25%;
+  width: 100rem;
+}
+
+.mediaElement img {
+  aspect-ratio: 16/9;
+  inline-size: 100%;
+  object-fit: cover;
+  object-position: top;
+}

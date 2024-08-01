@@ -5,21 +5,26 @@ import Button from '../button/button.component'
 const ProductCard = ({product}) => {
   return (
     <div className={Styles.productCard}>
-      <Image src={product.imageSrc} width={500} height={500} alt={product.imageAlt} />
-      <div className={Styles.cardText}>
-        <div className={Styles.cardContent}>
-          <div >
-            <h3>{product.name}</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ratione ullam voluptas quis dignissimos officiis aliquam! Earum totam vero </p>
-          </div>
-        </div>
-        <div className={Styles.butt}>
-          <Button buttonStyle='btnSecondary'>Voeg toe aan winkelwagen</Button>
-          <Button buttonStyle='btnPrimary'>Bekijk product</Button>
+    <div className={Styles.productImage}>
+      <span className={Styles.discountTag}>50% korting</span>
+      <Image
+        alt={product.imageAlt}
+        className={Styles.productThumb}
+        height={500}
+        src={product.imageSrc}
+        width={500}
+      />
+      <Button buttonStyle='btnPrimary'>Add to wish list</Button>
+    </div>
+      <div className={Styles.productInfo}>
+        <h2 className={Styles.productName}>{product.name}</h2>
+        <p className={Styles.productShortDescription}>{product.description}</p>
+        <div className={Styles.priceWrapper}>
+          <span className={Styles.price}>{product.currencie}{product.price}</span>
+          <span className={Styles.actualPrice}>{product.currencie}{product.recommendedPrice}</span>
         </div>
       </div>
-        <span className={Styles.productPrice}>{product.price}</span>
-    </div>
+  </div>
   )
 }
 

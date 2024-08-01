@@ -1,0 +1,27 @@
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: var(--size-2);
+}
+.mediaScroller {
+  --slider-index: 0;
+  display: flex;
+  flex-grow: 1;
+  margin: 0 0.25rem;
+  transform: translateX(calc(var(--slider-index) * - 100%));
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.snapsInline {
+  scroll-snap-type:inline mandatory;
+  scroll-padding-inline: var(--size-2);
+}
+
+.snapsInline > * {
+  scroll-snap-align: start;
+}

@@ -22,7 +22,10 @@
   "keywords": [
     "webshop",
     "hengelsport",
-    "sportfishing"
+    "sportfishing",
+    "nextjs",
+    "headless-shopify",
+    "headless-wordpress"
   ],
   "author": "Remco Jonk",
   "license": "ISC"

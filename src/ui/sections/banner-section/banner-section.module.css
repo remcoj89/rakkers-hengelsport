@@ -15,7 +15,7 @@
 }
 .bannerContent h3{
   text-shadow: var(--color-primary) 2px 1px 1px;
-  color: var(--color-neutral);
+  color: rgb(var(--color-neutral));
   font-size: var(--font-size-hero-medium);
   font-weight: var(--font-weight-medium);
 }
